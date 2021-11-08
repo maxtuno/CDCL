@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/cdcl.dir/cdcl.cc.o -o ../bin/cdcl 

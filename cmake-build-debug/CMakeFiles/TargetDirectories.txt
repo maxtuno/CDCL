@@ -1,0 +1,3 @@
+/home/peqnp/Documents/Development/2022/cdcl/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/peqnp/Documents/Development/2022/cdcl/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/peqnp/Documents/Development/2022/cdcl/cmake-build-debug/CMakeFiles/cdcl.dir
