@@ -290,7 +290,7 @@ namespace cdcl {
                     if (!drat_proof) {
                         if (trail.size() > max_assignment_size) {
                             max_assignment_size = trail.size();
-                            std::cout << "\rc " << number_of_variables - max_assignment_size << "    ";
+                            std::cout << "c " << number_of_variables - max_assignment_size << std::endl;
                             std::fflush(stdout);
                         }
                     }
@@ -382,8 +382,9 @@ int main(int argc, char *argv[]) {
 
     for (;;) {
         T status = solver.solve();
-        printf("\n%sSAT\n", status > 0 ? "" : "UN");
+        printf("s %sSATISFIABLE\n", status > 0 ? "" : "UN");
         if (status > 0) {
+            std::cout << "v ";
             for (auto x = 1; x <= solver.number_of_variables; ++x) {
                 if (solver.model[std::abs(x)]) {
                     std::cout << solver.model[std::abs(x)] << " ";
